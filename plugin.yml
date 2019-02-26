@@ -1,0 +1,7 @@
+name: TaberAddon-GUI
+author: Sam Taber and Josh Hanson
+version: 0.0.1
+main: com.tabercore.addon.main.GUIaddon
+commands:
+    ranktest:
+        description: test rank GUI

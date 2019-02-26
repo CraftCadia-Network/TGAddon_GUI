@@ -1,6 +1,9 @@
 package com.tabercore.addon.main;
 
+import org.bukkit.command.CommandExecutor;
 import org.bukkit.plugin.java.JavaPlugin;
+
+import com.tabercore.addon.commands.RankGUIcmd;
 
 public class GUIaddon extends JavaPlugin{
 
@@ -8,7 +11,7 @@ public class GUIaddon extends JavaPlugin{
 	
 	public void onEnable() {
 		instance = this;
-		
+		this.getCommand("ranktest").setExecutor((CommandExecutor)new RankGUIcmd());
 		
 	}
 	
